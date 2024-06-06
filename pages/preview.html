@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview iframe - Spotform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+
+<body>
+    <header id="global-header-preview">
+        <img src="../assets/spotform-logo.svg">
+
+        <button class="btn-voltar" onclick="voltar()" type="button">Voltar</button>
+
+
+    </header>
+    <section id="box-preview">
+
+        <form id="form-preview">
+            <span>
+                <label>
+                    Tamanho:
+                </label>
+                <input oninput="setValue(value,this)" max="1000" id="number-tamanho" type="number" value="100"
+                    class="input-preview">
+                <select name="tamanho" id="und-tamanho" class="preview-und">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+
+                </select>
+            </span>
+            <span>
+                <label>
+                    Altura:
+                </label>
+                <input oninput="setValue(value,this)" max="1000" id="number-altura" type="number" value="100"
+                    class="input-preview">
+                <select name="altura" id="und-altura" class="preview-und">
+                    <option value="%">%</option>
+                    <option value="px">px</option>
+
+                </select>
+            </span>
+
+            <span>
+                <label>
+                    Arrendondamento do form:
+                </label>
+                <input oninput="setValue(value,this)" max="1000" id="number-radius" type="number" value="0"
+                    class="input-preview">
+                <select name="radius" id="und-radius" class="preview-und">
+                    <option value="px">px</option>
+                    <option value="%">%</option>
+
+
+                </select>
+            </span>
+
+
+        </form>
+
+        <div>
+            <p class="text-perigo" style="color: red;">Não insira valores negativos</p>
+
+            <h1 class="text-prev">Preview:</h1>
+        </div>
+        <div id="preview">
+
+        </div>
+        <div id="area-copy">
+            <input type="text" placeholder="Ops!! parece que tivemos um problema" disabled id="link-copy" id="">
+            <button id="btn-copy" onclick="copiar()" type="button"> Clique aqui para Copiar o código
+            </button>
+        </div>
+
+
+    </section>
+    <script src="../js/preview.js"></script>
+</body>
+
+</html>
