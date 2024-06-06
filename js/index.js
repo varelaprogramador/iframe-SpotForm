@@ -64,9 +64,10 @@ function verificaLink(){
 }
 function resetInput(){
     sessionStorage.setItem("dados",linkForm.value);
+    linkForm.value="";
     
     console.log('resetou')
-    linkForm.value="";
+    
 
 }
 
