@@ -66,7 +66,7 @@ function resetInput(){
     sessionStorage.setItem("dados",linkForm.value);
     linkForm.value="";
     
-    console.log('resetou')
+    console.log('resetou\n '+linkForm.value)
     
 
 }
