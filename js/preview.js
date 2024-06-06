@@ -31,9 +31,23 @@ const renderPreview = () => {
 }
 renderPreview();
 
-document.getElementById("und-tamanho").addEventListener('change', renderPreview);
-document.getElementById("und-altura").addEventListener('change', renderPreview);
-document.getElementById("und-radius").addEventListener('change', renderPreview);
+function render(elemento) {
+    const valueTamanho = document.getElementById("number-tamanho") ;
+    const valueAltura = document.getElementById("number-altura");
+
+    if((elemento.value=="%" && valueTamanho.value>100)){
+        valueTamanho.value=100;
+        console.log(valueTamanho.value);
+    }
+    if((elemento.value=="%" && valueAltura.value>100)){
+        valueAltura.value=100;
+        console.log(valueAltura.value);
+    }
+
+    renderPreview();
+ 
+    
+}
 function voltar() {
 
 

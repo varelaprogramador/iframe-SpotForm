@@ -30,7 +30,7 @@
                 </label>
                 <input oninput="setValue(value,this)" max="1000" id="number-tamanho" type="number" value="100"
                     class="input-preview">
-                <select name="tamanho" id="und-tamanho" class="preview-und">
+                <select  onchange="render(this)" name="tamanho" id="und-tamanho" class="preview-und">
                     <option value="%">%</option>
                     <option value="px">px</option>
 
@@ -42,7 +42,7 @@
                 </label>
                 <input oninput="setValue(value,this)" max="1000" id="number-altura" type="number" value="500"
                     class="input-preview">
-                <select name="altura" id="und-altura" class="preview-und">
+                <select onchange="render(this)" name="altura" id="und-altura" class="preview-und">
                     <option value="px">px</option>
                     <option value="%">%</option>
 
@@ -55,7 +55,7 @@
                 </label>
                 <input oninput="setValue(value,this)" max="1000" id="number-radius" type="number" value="0"
                     class="input-preview">
-                <select name="radius" id="und-radius" class="preview-und">
+                <select  onchange="render(this)" name="radius" id="und-radius" class="preview-und">
                     <option value="px">px</option>
                     <option value="%">%</option>
 
