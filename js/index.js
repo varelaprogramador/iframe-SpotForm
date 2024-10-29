@@ -28,7 +28,7 @@ function verificaLink(){
 
     const form=document.getElementById("form-inpts");
 
-    if(linkForm.value.startsWith('https://www.spotform.com.br/form/')){
+    if(linkForm.value.startsWith('https://www.form.spotform.com.br/')){
         
         renderStatus("good");
 
